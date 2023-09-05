@@ -164,7 +164,6 @@ for filename in os.listdir(source_path):
     df.insert(31, '死亡人數', new_column)
     df.insert(32, '受傷人數', new_column)
     
-
     # 將死亡人數與受傷人數切分
     df['死亡人數'] = df['死亡受傷人數'].apply(lambda x: spilt_dead_num(x))
     df['受傷人數'] = df['死亡受傷人數'].apply(lambda x: spilt_injuried_num(x))
