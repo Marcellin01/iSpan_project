@@ -56,7 +56,6 @@ def determine_transform_successful(driver, csv_trans,i , latitude_and_longitude_
 def write_to_csv(dataframe):
     dataframe.to_csv("地址轉座標.csv", index=False, encoding="utf_8_sig")
     
-
 if __name__ == "__main__":
     latitude_and_longitude_r = r"@(-?\d+\.\d+),(-?\d+\.\d+),"
     csv_trans = pd.read_csv("example.csv", header=0)
