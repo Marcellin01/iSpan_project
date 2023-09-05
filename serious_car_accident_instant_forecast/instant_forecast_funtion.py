@@ -229,7 +229,6 @@ def get_six_city_hot_spots_json(df):
     return json_str
 
 
-
 # 以下為在其他檔案要import上面的方法的程式碼
 if __name__ == "__main__":
     from instant_forecast_funtion import get_instant_weather_data , add_data_to_six_city_hot_spots, preprocessing_for_feeding_model, get_probability,get_six_city_hot_spots_json
